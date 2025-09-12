@@ -3,12 +3,19 @@ A complete JSON Web Token (JWT) authentication implementation built with Spring 
 
 ## Features
 -> User registration and login with JWT tokens
+
 -> Spring Security configuration with stateless authentication
+
 -> Protected endpoints requiring valid JWT tokens
+
 -> Token revocation and logout functionality
+
 -> H2 in-memory database for development
+
 -> Swagger/OpenAPI documentation
+
 -> Password encryption with BCrypt
+
 -> Role-based access control
 
 ## Technology Stack
