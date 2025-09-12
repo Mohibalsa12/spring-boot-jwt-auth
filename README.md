@@ -115,3 +115,54 @@ curl -X POST http://localhost:8080/api/v1/auth/authenticate \
     "password": "password123"
   }'
 ```
+-> Access Protected Endpoint
+```bash
+curl -X GET http://localhost:8080/api/v1/demo \
+  -H "Authorization: Bearer YOUR_JWT_TOKEN_HERE"
+```
+-> Logout
+```bash
+curl -X POST http://localhost:8080/api/v1/auth/logout \
+  -H "Authorization: Bearer YOUR_JWT_TOKEN_HERE"
+```
+-> Configuration
+Key configuration in application.properties:
+```bash
+server.port=8080
+spring.datasource.url=jdbc:h2:mem:testdb
+spring.datasource.username=sa
+spring.datasource.password=password
+spring.h2.console.enabled=true
+spring.jpa.hibernate.ddl-auto=create-drop
+spring.jpa.show-sql=true
+```
+
+## Security Features
+JWT tokens with 24-minute expiration
+
+Password encryption using BCrypt
+
+Stateless authentication (no sessions)
+
+CSRF protection disabled for API usage
+
+Role-based authorisation ready for extension
+
+Token revocation on logout
+
+Secure headers and CORS configuration
+
+## Contributing
+1. Fork the repository
+
+2. Create a feature branch
+
+3. Make your changes
+
+4. Add tests if applicable
+
+5. Submit a pull request
+
+## By 
+Aditya Mishra. 
+Happy Coding </>.
